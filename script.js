@@ -16,9 +16,9 @@ var makeProfile = function () {
   '<h1>Hi, my name is ' + firstName + ' ' + lastName + '!</h1>' +
   '<p>' + desc + '</p>' +
   '<p> If you\'re interested in a date, you can email me at ' +
-  email.link('mailto:email') +
+  '<a href="mailto:' + email + '" target="_blank">' + email + '</a>' +
   ' or give me a call at ' +
-  phone.link('tel:phone') +
+  '<a href="tel:' + phone + '" target="_blank">' + phone + '</a>' +
   '. </p>'
 
   preview.textContent = paragraph
