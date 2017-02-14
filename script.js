@@ -21,8 +21,8 @@ var makeProfile = function () {
   '<a href="tel:' + phone + '" target="_blank">' + phone + '</a>' +
   '. </p>'
 
-  preview.textContent = paragraph
-  generated.innerHTML = paragraph
+  generated.textContent = paragraph
+  preview.innerHTML = paragraph
 }
 
 firstInput.addEventListener('input', makeProfile)
